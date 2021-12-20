@@ -1,0 +1,27 @@
+.info_footer {
+    padding: $padding_md_y 0;
+    background-color: $color_primary;
+    color: white;
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+
+            img {
+                width: 40px;
+                margin-right: 5px;
+            }
+            a {
+                color: white;
+                text-transform: uppercase;
+                font-size: 13px;
+                padding: 5px 8px;
+            }
+        } 
+    }
+}

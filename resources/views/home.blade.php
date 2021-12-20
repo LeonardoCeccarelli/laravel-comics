@@ -8,4 +8,9 @@
 
 @section('main_content')
     @include('partials.hero_section')
+    @include('partials.card_container')
+@endsection
+
+@section('footer_content')
+    @include('partials.icon_main_bottom')
 @endsection

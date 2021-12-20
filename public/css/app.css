@@ -104,6 +104,29 @@ main .main_container .card_container {
   row-gap: 35px;
 }
 
+main .main_container .single_card_container {
+  padding: 0 10px;
+  width: 16.6666666667%;
+}
+
+main .main_container .single_card_container .single_card {
+  width: 100%;
+}
+
+main .main_container .single_card_container .single_card img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .main_container .single_card_container .single_card h5 {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
 main .main_container .btn_container {
   text-align: center;
 }
@@ -116,5 +139,34 @@ main .main_container .btn_container button {
   border: 1px solid #0282f9;
   margin-top: 35px;
   padding: 7px 45px;
+}
+
+.info_footer {
+  padding: 35px 0;
+  background-color: #0282f9;
+  color: white;
+}
+
+.info_footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.info_footer ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.info_footer ul li img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.info_footer ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 5px 8px;
 }
 
