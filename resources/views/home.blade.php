@@ -5,3 +5,7 @@
 @section('header_content')
     @include('partials.navbar')
 @endsection
+
+@section('main_content')
+    @include('partials.hero_section')
+@endsection

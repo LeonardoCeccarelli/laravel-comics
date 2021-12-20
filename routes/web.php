@@ -13,10 +13,52 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', function () {
-    return view('home');
+
+    $data = [
+        "listNavLink" => [
+            [
+                "text" => "Characters",
+                "link" => "#Characters",
+            ],
+            [
+                "text" => "Comics",
+                "link" => "#Comics",
+            ],
+            [
+                "text" => "Movies",
+                "link" => "#Movies",
+            ],
+            [
+                "text" => "Tv",
+                "link" => "#Tv",
+            ],
+            [
+                "text" => "Games",
+                "link" => "#Games",
+            ],
+            [
+                "text" => "Collectibles",
+                "link" => "#Collectibles",
+            ],
+            [
+                "text" => "Videos",
+                "link" => "#Videos",
+            ],
+            [
+                "text" => "Fans",
+                "link" => "#Fans",
+            ],
+            [
+                "text" => "News",
+                "link" => "#News",
+            ],
+            [
+                "text" => "Shop",
+                "link" => "#Shop",
+            ],
+        ]
+    ];
+
+    return view('home', $data);
 });
