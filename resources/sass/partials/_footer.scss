@@ -1,0 +1,99 @@
+.link_footer {
+    background-image: url("/img/footer-bg.jpg");
+    min-height: 200px;
+    max-height: 350px;
+    overflow: hidden;
+    background-color: #303030;
+
+    .container {
+        width: 1020px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .list_link_container {
+        height: 100%;
+        width: 40%;
+        padding: $padding_md_y 0;
+        display: flex;
+
+        .list_link {
+            margin-left: 15px;
+            li {
+
+                margin-bottom: 3px;
+
+                &.head_link {
+                    margin: 10px 0;
+
+                    a {
+                        color: white;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        font-weight: bolder;
+                    }
+                }
+                
+                a {
+                    color: #959595;
+                    display: inline-block;
+                    font-size: 12px;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+
+    .main_logo_container {
+        width: 60%;
+
+        .main_logo {
+            width: 480px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                transform: translateY(-100px);
+            }
+        }
+    }
+}
+
+.social_footer {
+    background-color: #303030;
+    padding: $padding_sm_y 0;
+    display: flex;
+
+    .btn_container {
+        width: 40%;
+        text-align: center;
+
+        button {
+            padding: 8px 12px;
+            background-color: #303030;
+            border: 2px solid $color_primary;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+    .social_icon_container {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            text-transform: uppercase;
+            color: $color_primary;
+            margin-right: 20px;
+            font-weight: bold
+        }
+
+        img {
+            width: 25px;
+            margin-right: 10px;
+        }
+    }
+}
