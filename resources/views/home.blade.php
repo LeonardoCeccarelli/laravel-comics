@@ -13,5 +13,5 @@
 
 @section('footer_content')
     @include('partials.icon_main_bottom')
-    @include('partials.footer')
+    @include('partials.the_footer')
 @endsection
