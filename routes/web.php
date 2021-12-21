@@ -28,6 +28,19 @@ Route::get('/', function () {
     return view('home', $data);
 })->name('home');
 
-Route::get('/dettagli/{id?}', function () {
-    return view('details');
-});
+Route::get('/dettagli/{id?}', function ($id) {
+    $comics = config('comics');
+
+    if (is_numeric($id) && $id >= 0 && $id < count($comics)) {
+        $singleComic = $comics[$id];
+
+        // return view("products.details", [
+        //   "pasta" => $pasta
+        // ]);
+        return view('details', [
+            "singleComic" => $singleComic,
+        ]);
+    } else {
+        abort('404');
+    }
+})->name('details');

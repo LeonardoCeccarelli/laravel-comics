@@ -3,43 +3,43 @@
 $listNavLink = [
   [
       "text" => "Characters",
-      "link" => "#Characters",
+      "link" => "#",
   ],
   [
       "text" => "Comics",
-      "link" => "#Comics",
+      "link" => "home",
   ],
   [
       "text" => "Movies",
-      "link" => "#Movies",
+      "link" => "#",
   ],
   [
       "text" => "Tv",
-      "link" => "#Tv",
+      "link" => "#",
   ],
   [
       "text" => "Games",
-      "link" => "#Games",
+      "link" => "#",
   ],
   [
       "text" => "Collectibles",
-      "link" => "#Collectibles",
+      "link" => "#",
   ],
   [
       "text" => "Videos",
-      "link" => "#Videos",
+      "link" => "#",
   ],
   [
       "text" => "Fans",
-      "link" => "#Fans",
+      "link" => "#",
   ],
   [
       "text" => "News",
-      "link" => "#News",
+      "link" => "#",
   ],
   [
       "text" => "Shop",
-      "link" => "#Shop",
+      "link" => "#",
   ],
 ];
 
@@ -51,9 +51,18 @@ $listNavLink = [
     </div>
     <div class="link_navbar">
       <ul>
-          @foreach ($listNavLink as $navLink)              
+          @foreach ($listNavLink as $navLink)
+          @php
+
+          $_link = $navLink['link'];
+
+          if ($_link != '#') {
+            $_link = route($navLink['link']);
+          }
+              
+          @endphp              
         <li>
-          <a href="{{ $navLink['link'] }}">{{ $navLink['text'] }}</a>
+          <a href="{{ $_link }}">{{ $navLink['text'] }}</a>
         </li>
         @endforeach
       </ul>
