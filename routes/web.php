@@ -42,4 +42,4 @@ Route::get('/', function () {
     ];
 
     return view('home', $data);
-});
+})->name('home');
